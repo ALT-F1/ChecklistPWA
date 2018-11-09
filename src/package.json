@@ -1,0 +1,26 @@
+{
+  "android": {
+    "v8Flags": "--expose_gc"
+  },
+  "main": "main.ns.js",
+  "name": "check-list",
+  "version": "4.1.0",
+  "description": "Checklist progressive web app : iOS, Android, Web by http://www.alt-f1.be",
+  "keywords": [
+    "progressive-web-app", "iOS", "Android", "PWA", "Angular", "ALT-F1-SPRL"
+  ],
+  "bugs": {
+    "url": "https://github.com/Abdelkrim/ChecklistPWA/issues",
+    "email": "abo+ChecklistPWA_issues@alt-f1.be"
+  },
+  "license": "SEE LICENSE IN <LICENSE>",
+  "author": {
+    "name" : "Abdelkrim BOUJRAF"
+, "email" : "abo+ChecklistPWA_author@alt-f1.be"
+, "url" : "http://www.alt-f1.be"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Abdelkrim/ChecklistPWA.git"
+  }
+}
