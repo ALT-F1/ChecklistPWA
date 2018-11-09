@@ -1,18 +1,16 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { ListHelper } from './list.helper';
 
 @Injectable()
 export class ListService {
   saved: any[];
+  helper: ListHelper;
 
   constructor(private http: HttpClient) {
-    const saved = localStorage.getItem('items');
-    if (saved) {
-      this.saved = JSON.parse(saved);
-    } else {
-      this.saved = [];
-    }
+    this.helper = new ListHelper();
+    this.saved = this.helper.readItems();
   }
 
   get() {
@@ -41,6 +39,6 @@ export class ListService {
   }
 
   save() {
-    localStorage.setItem('items', JSON.stringify(this.saved));
+    this.helper.writeItems(this.saved);
   }
 }

@@ -12,6 +12,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+Run `ns build  android` to build the apk
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
@@ -44,4 +46,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * <https://angular.io/guide/quickstart>
 * <https://medium.com/@nsmirnova/creating-pwa-with-angular-5-part-2-progressifying-the-application-449e3a706129>
 * <https://blogs.msdn.microsoft.com/premier_developer/2018/04/02/hosting-an-angular-progressive-web-application-pwa-with-azure/>
-* <>
