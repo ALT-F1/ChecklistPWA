@@ -15,7 +15,11 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "android": "tns run android --bundle",
-    "ios": "tns run ios --bundle"
+    "ios": "tns run ios --bundle",
+    "patch": "npm run release -- --release-as patch",
+    "minor": "npm run release -- --release-as minor",
+    "major": "npm run release -- --release-as major",
+    "push": "git push --follow-tags origin master"
   },
   "private": true,
   "dependencies": {
@@ -33,6 +37,7 @@
     "nativescript-theme-core": "~1.0.4",
     "reflect-metadata": "~0.1.8",
     "rxjs": "^6.0.0",
+    "standard-version": "^7.1.0",
     "tns-core-modules": "~4.2.0",
     "zone.js": "^0.8.26"
   },
